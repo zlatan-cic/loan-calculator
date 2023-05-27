@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Loan Calculator</title>
+</head>
+
+<body>
+
+  <div class="loan-calculator">
+    <!-- Head of calculator -->
+    <div class="header-cal">
+      <h2>Loan Calculator</h2>
+      <form action="">
+        <div class="group">
+          <div class="title">Amount</div>
+          <input type="text" value="30000" class="loan-amount">
+        </div>
+        <div class="group">
+          <div class="title">Intres Rate</div>
+          <input type="text" value="8.5" class="loan-intres_rate">
+        </div>
+        <div class="group">
+          <div class="title">Tenure (in Months)</div>
+          <input type="text" value="240" class="loan-tenure">
+        </div>
+      </form>
+    </div>
+
+    <div class="result">
+      <div class="left-group">
+        <div class="loan-emi">
+          <h3>Loan EMI</h3>
+          <div class="value">123</div>
+        </div>
+        <div class="total-in">
+          <h3>Total Interest Payable</h3>
+          <div class="value">12345</div>
+        </div>
+        <div class="total-amount">
+          <h3>Total Amount</h3>
+          <div class="value">123</div>
+        </div>
+        <button type="submit" class="cal-btn">Calculate</button>
+      </div>
+
+      <div class="right-group">
+        <canvas id="myChart" width="300" height="300"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
